@@ -61,7 +61,7 @@ public class Trabajadores {
 				}
 				break;
 			case Volunteer:
-				if(salario != 0 && salario != 300)
+				if(salario != 0)
 				{
 					salario = 0;
 				}
@@ -107,7 +107,7 @@ public class Trabajadores {
 				break;
 			case Volunteer:
 				this.ajut = true;
-				this.salarioMes *= 300;
+				this.salarioMes = 300;
 				this.salarioAny = 300 * 12;
 				this.salarioMesNeto = this.salarioMes;
 				this.salarioAnyNeto = this.salarioAny;
