@@ -87,9 +87,7 @@ public class Trabajadores {
 				this.salario*=0.90;
 				break;
 			case Junior:
-				System.out.println(this.salario);
 				this.salario*=0.85;
-				System.out.println(this.salario);
 				break;
 			case Volunteer:
 				this.salario*=0;
