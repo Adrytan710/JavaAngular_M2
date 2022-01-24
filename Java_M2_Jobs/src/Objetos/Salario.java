@@ -8,9 +8,14 @@ public class Salario {
 		case Boss:
 			t.salario*=1.50;
 			break;
-		case Employee:
-			t.salario*=0.85;
+		case Senior:
+			t.salario*=0.95;
 			break;
+		case Mid:
+			t.salario*=0.90;
+			break;
+		case Junior:
+			t.salario*=0.85;
 		case Volunteer:
 			t.salario*=0;
 			break;

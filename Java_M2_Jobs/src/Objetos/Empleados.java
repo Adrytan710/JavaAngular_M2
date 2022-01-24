@@ -3,6 +3,8 @@ package Objetos;
 public enum Empleados {
 	Manager,
 	Boss,
-	Employee,
+	Senior,
+	Mid,
+	Junior,
 	Volunteer
 }
