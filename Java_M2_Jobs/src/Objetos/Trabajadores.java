@@ -61,7 +61,7 @@ public class Trabajadores {
 				}
 				break;
 			case Volunteer:
-				if(salario != 0)
+				if(salario != 0 && salario != 300)
 				{
 					salario = 0;
 				}
