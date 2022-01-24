@@ -18,6 +18,13 @@ public class MainApp {
 		t5.calcularSalario();
 		t6.calcularSalario();
 		
+		t1.bonusAnual();
+		t2.bonusAnual();
+		t3.bonusAnual();
+		t4.bonusAnual();
+		t5.bonusAnual();
+		t6.bonusAnual();
+		
 		System.out.println(t1);
 		System.out.println(t2);
 		System.out.println(t3);
