@@ -11,12 +11,12 @@ public class MainApp {
 		Trabajadores t5 = new Trabajadores(Empleados.Junior,1200);
 		Trabajadores t6 = new Trabajadores(Empleados.Volunteer,1300);
 		
-		Salario.calcularSalario(t1);
-		Salario.calcularSalario(t2);
-		Salario.calcularSalario(t3);
-		Salario.calcularSalario(t4);
-		Salario.calcularSalario(t5);
-		Salario.calcularSalario(t6);
+		t1.calcularSalario();
+		t2.calcularSalario();
+		t3.calcularSalario();
+		t4.calcularSalario();
+		t5.calcularSalario();
+		t6.calcularSalario();
 		
 		System.out.println(t1);
 		System.out.println(t2);

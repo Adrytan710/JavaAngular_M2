@@ -11,64 +11,90 @@ public class Trabajadores {
 
 	private double comprobarSalario(double salario, Empleados empleado)
 	{
-		double sal = salario;
 		switch(empleado) 
 		{
 			case Boss:
-				if(sal < 8000)
+				if(salario < 8000)
 				{
-					sal = 8000;
+					salario = 8000;
 				}
 				break;
 			case Manager:
-				if(sal < 3000)
+				if(salario < 3000)
 				{
-					sal = 3000;
+					salario = 3000;
 				}
-				else if(sal > 5000)
+				else if(salario > 5000)
 				{
-					sal = 5000;
+					salario = 5000;
 				}
 				break;
 			case Senior:
-				if(sal < 2700)
+				if(salario < 2700)
 				{
-					sal = 2700;
+					salario = 2700;
 				}
-				else if(sal > 4000)
+				else if(salario > 4000)
 				{
-					sal = 4000;
+					salario = 4000;
 				}
 				break;
 			case Mid:
-				if(sal < 1800)
+				if(salario < 1800)
 				{
-					sal = 1800;
+					salario = 1800;
 				}
-				else if(sal > 2500)
+				else if(salario > 2500)
 				{
-					sal = 2500;
+					salario = 2500;
 				}
 				break;
 			case Junior:
-				if(sal < 900)
+				if(salario < 900)
 				{
-					sal = 900;
+					salario = 900;
 				}
-				else if(sal > 1600)
+				else if(salario > 1600)
 				{
-					sal = 1600;
+					salario = 1600;
 				}
 				break;
 			case Volunteer:
-				if(sal != 0)
+				if(salario != 0)
 				{
-					sal = 0;
+					salario = 0;
 				}
 				break;
 		}
 
-		return sal;
+		return salario;
+	}
+	
+	public void calcularSalario() 
+	{
+		switch(this.empleados) 
+		{
+			case Manager:
+				this.salario*=1.10;
+				break;
+			case Boss:
+				this.salario*=1.50;
+				break;
+			case Senior:
+				this.salario*=0.95;
+				break;
+			case Mid:
+				this.salario*=0.90;
+				break;
+			case Junior:
+				System.out.println(this.salario);
+				this.salario*=0.85;
+				System.out.println(this.salario);
+				break;
+			case Volunteer:
+				this.salario*=0;
+				break;
+		}
 	}
 
 	@Override
